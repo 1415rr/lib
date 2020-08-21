@@ -1,0 +1,26 @@
+1. modulos
+   conjunto de componentes.
+2. componentes
+   principal. toda view é composta de componentes.
+3. templates
+   html que representam o componente.
+4. metadados
+   configuração do componente.
+5. databinding
+   ligacao entre o template e o componente em duas vias ( property/event binding ).
+6. directivas
+   configuracoes do template ( consigo fazer um for , if )
+7. services
+   lógica e acesso aa api restful
+8. injecao de dependencias
+   configurar o servico e injetar no componente (???)
+
+   ---------------------
+comandos
+cria aplicacao (aparentemente "-app" é um sufixo recomendado): 
+ng new aplicacao-app
+
+serve a aplicação:
+cd my-dream-app
+ng serve --open
+(-- open já abre o navegador)

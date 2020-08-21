@@ -1,0 +1,67 @@
+como é a declaracao de variaveis?
+var i: number = 1;
+
+ecma sobre ";"
+11.9 Automatic Semicolon Insertion
+Most ECMAScript statements and declarations must be terminated with a semicolon. Such semicolons may always appear explicitly in the source text. For convenience, however, such semicolons may be omitted from the source text in certain situations. 
+
+alguns tipos:
+number, string, boolean
+(number aceita decimal)
+
+declarando um array :
+var umArray: stirng[] = ['A', 'B'];
+
+declarando uma classe:
+class Pessoa {
+   nome: string;
+   idade: number;
+
+//Constructor é opcional
+   constructor (){
+      this.nome  = 'alpha';
+      this.idade = 10;
+
+   }
+
+para instanciar: 
+let pessoa: Pessoa;
+ou
+pessoa = new Pessoa();
+
+//no construtor eu tb posso declarar variaveis da classe
+constructor (
+   public nome: string,
+   private idade: number
+){}
+
+ou
+
+class Pessoa {
+
+   //variavel de instancia nao precisa de let/const
+
+   public nome: string;
+   private idade: number;
+   constructor (
+      nome: string,
+      idade: number
+   ){
+      this.nome = nome;
+      this.idade = idade;
+   }
+
+   obterNome(): string {return this.nome}
+
+
+pessoa = new Pessoa( 'beta', 30);
+
+
+}
+
+
+
+para instanciar: 
+let pessoa: Pessoa;
+ou
+pessoa = new Pessoa();

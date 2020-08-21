@@ -7,8 +7,11 @@
  * --
  * O mais facil de fazer e' via node, pq esta' fora
  * do browser.
- * Aqui, cabe ainda ver o que faz o require e os
- * strings readline e fs.
+ * O require iporta o modulo no node.
+ * heranca do commonjs
+ * 
+ * falta ver o que fazem
+ * os modulos fs e readline.
  * 
  * 
  * Autor: Rafael Silveira Reis 
