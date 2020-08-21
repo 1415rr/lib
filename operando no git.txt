@@ -37,7 +37,7 @@ o pull obriga o merge.
 para subir:
 git add .
 git commit -a ???
-git commit -m "commit999"
+git commit -a -m "commit999"
 falta o pull
 git push -u origin master
 git status
