@@ -31,4 +31,12 @@ git clone https://github.com/1415rr/lib.git
 
 para não dar conflito de versão, fazer o pull imediatamente antes de fazer o push, 
 senao vc pode sobrescrever um arquivo atualizado por outro da equipe.
+o pull obriga o merge.
 ( estranho não conferir por data... )
+
+para subir:
+git add .
+git commit -m "commit999"
+falta o pull
+git push -u origin master
+git status
