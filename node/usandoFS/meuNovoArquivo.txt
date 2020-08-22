@@ -1,0 +1,3 @@
+Sincrono UM
+Sincrono DOIS
+Assincrono ZERO

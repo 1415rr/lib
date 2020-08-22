@@ -7,19 +7,22 @@
  * --
  * O mais facil de fazer e' via node, pq esta' fora
  * do browser.
- * O require iporta o modulo no node.
+ * O require importa o modulo no node.
  * heranca do commonjs
  * 
  * falta ver o que fazem
  * os modulos fs e readline.
  * 
+ * FS é gigante. estou usando node 10
+ * node atual é 14.
+ * o que é um objeto promises ?
  * 
  * Autor: Rafael Silveira Reis 
  * Data: 20/08/2020
  * 
 ****************************************************/
 
-const readline  = require('readline');
+const readline  = require ('readline');
 const fs        = require ('fs');
 const readable  = fs.createReadStream ('53180.049062_2019_23', {encoding:'latin1'});
 
