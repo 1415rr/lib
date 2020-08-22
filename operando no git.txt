@@ -7,21 +7,19 @@ como adicionar o README ( eu adicionei com "git add ." - sobe o diretorio corren
 echo "# lib" >> README.md
 git add README.md
 
-sobre o 1o comiit
-git commit -m "first commit"
-
 --- daqui para baixo é quando vc ja tem o repositorio 
-( por que teria o repositorio e nao estaria em cima ?)
-
-nao sei ainda o que faz.
+aponta para o "origin" que é o lugar onde faz o pull e o push
 git remote add origin https://github.com/1415rr/lib.git
 
 aqui pede login e senha ( lembrar do PULL)
+git pull origin master
 git push -u origin master
 
 confere se subiu
 git status
 
+sobre o 1o comiit
+git commit -m "first commit"
 
 os arquivos e pastas que não irão subir:
 .gitignore no raiz (neste caso, no lib)
@@ -29,15 +27,12 @@ os arquivos e pastas que não irão subir:
 Para baixar os fontes (se for public, nao precisa de senha): 
 git clone https://github.com/1415rr/lib.git
 
-para não dar conflito de versão, fazer o pull imediatamente antes de fazer o push, 
-senao vc pode sobrescrever um arquivo atualizado por outro da equipe.
-o pull obriga o merge.
-( estranho não conferir por data... )
 
 para subir:
 git add .
-git commit -a ???
+ou 
 git commit -a -m "commit999"
-falta o pull
+
+git pull origin master
 git push -u origin master
 git status

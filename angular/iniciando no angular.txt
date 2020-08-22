@@ -24,3 +24,55 @@ serve a aplicação:
 cd my-dream-app
 ng serve --open
 (-- open já abre o navegador)
+
+   ---------------------
+Toda aplicação node tem um package.json
+a parametrização da aplicação fica no angular.json (index, main)
+package.json e angular.json ficam na raiz da aplicação.
+na pasta node_modules, ficam os modulos do node necessários para rodar o angular
+
+   ---------------------
+o desenvolvimento ocorre na pasta src
+
+o html principal do angular é o index.html
+componente que inicializa a palicação é o app-root.
+nao costumamos mudar o main.ts 
+
+dentro da pasta src/app ficarão os componentes.
+app.module.ts - define que módulos serão iniciados na aplicação.
+app.component.ts - é a página inicial do angular.
+dentro do app.component.ts temos o @Component que é o "decorator" que define um componente.
+no componente temos html e css próprios
+
+convenção de nome de componente.
+nome.component ( e extensões ts, html, css )
+
+   ---------------------
+quando criei o hello.component.ts:
+1) criei uma pasta hello - pasta  "." = src/app
+no  ./hello/hello.component.ts:
+1) importei o Component
+2) fiz o decorator do @Component "({})" a chave é porque a definição de dentro forma um objeto que é passado para o decorator.
+3) dentro do decorator vai: selector(nome), template``/templateUrl(html), styleUrls(css) - tem cara de json
+4) depois eu declaro o export class NomeComponent, para ela ser pública.
+
+no ./app.module.ts:
+1) importei NomeComponent from './hello/arq sem extensao';
+2) declarei embaixo de AppComponent;
+
+o selector é quem define a tag <hello></hello> que vai ser inserida/referenciada pelo app.component.html 
+
+
+guia de estilo:
+quando o componente tem mais de um nome, separar com - no nome da pasta e do arquivo. no objeto usar CamelCase(CC mesmo).
+no selector, usar hifen e sufixo component: hello-primeiro-component
+
+   ---------------------
+para cirar via CLI
+ng g c helloRafael
+ou por extenso:
+ng generate component helloRafael
+
+(cria no padrao de nomenclatura respeitando o camelCase e atualiza o app.module.ts)
+para gerar apenas os modulos ( sem o teste )
+ng g c helloRafael --skipTests=true
