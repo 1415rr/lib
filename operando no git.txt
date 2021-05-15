@@ -1,3 +1,7 @@
+iista de comandos quentes:
+https://github.com/1415rr/js-sumer/blob/main/comandos-git.txt
+
+
 …or create a new repository on the command line
 
 cria as pastas de controle
